@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Sahithi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111c33;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .home {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #38bdf8;
+        }
+
+        .home h2 {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            max-width: 650px;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.9;
+            color: #cbd5e1;
+        }
+
+        .skills-container,
+        .projects-container,
+        .cert-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .education {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 15px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            background: #111c33;
+            padding: 20px;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                display: inline-block;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Sahithi.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="home" id="home">
+    <h1>Hi, I'm <span>Banda Sahithi</span></h1>
+    <h2>Computer Science Engineering Student</h2>
+
+    <p>
+        Passionate about Artificial Intelligence, Machine Learning
+        and Data Science. I enjoy building innovative projects
+        and developing technology-driven solutions to real-world problems.
+    </p>
+
+    <a href="#projects" class="btn">Explore My Work</a>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2 class="heading">About Me</h2>
+
+    <p>
+        I am a Computer Science Engineering student at SR University
+        with a strong academic background and a CGPA of 9.4.
+        I am interested in Artificial Intelligence, Machine Learning,
+        Web Development and Data Science.
+
+        My goal is to continuously improve my technical skills
+        and build impactful applications that solve real-world problems.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="heading">My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, C, JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>HTML5, CSS3, JavaScript</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>NumPy, Pandas, Matplotlib</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Jupyter Notebook</p>
+        </div>
+
+        <div class="card">
+            <h3>Core Interests</h3>
+            <p>Artificial Intelligence, Machine Learning, Data Science</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="card education">
+        <h3>Bachelor of Technology</h3>
+        <p>Computer Science Engineering</p>
+        <p>SR University, Warangal, Telangana</p>
+        <p><strong>CGPA: 9.4 / 10</strong></p>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="heading">My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Food Connect</h3>
+            <p>
+                A web-based platform designed to connect food donors
+                with people and organizations in need, helping reduce
+                food waste.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Exam Paper Generator</h3>
+            <p>
+                An AI-based application that generates question papers
+                from syllabus content using Natural Language Processing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Stock Price Prediction</h3>
+            <p>
+                A Machine Learning project that predicts stock prices
+                using historical data and LSTM networks.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Tutor for Multilingual Students</h3>
+            <p>
+                An AI-powered learning assistant designed to support
+                students through multilingual educational assistance.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+    <h2 class="heading">Certifications</h2>
+
+    <div class="cert-container">
+
+        <div class="card">
+            <h3>Fundamentals of Deep Learning</h3>
+            <p>NVIDIA</p>
+        </div>
+
+        <div class="card">
+            <h3>Introduction to Networks</h3>
+            <p>Cisco Networking Academy</p>
+        </div>
+
+        <div class="card">
+            <h3>Introduction to Git and GitHub</h3>
+            <p>Google</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+
+    <p>Email: your-email@example.com</p>
+    <p>LinkedIn: Add your LinkedIn profile URL</p>
+    <p>GitHub: Add your GitHub profile URL</p>
+
+    <a href="mailto:your-email@example.com" class="btn">
+        Send Me an Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Banda Sahithi | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
